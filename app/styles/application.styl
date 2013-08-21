@@ -1,0 +1,140 @@
+@import nib
+
+yellow-txt = rgb(243,177,0)
+brown-txt = rgb(81,63,63)
+white-txt = rgb(245,245,245)
+navy-txt = #363b48
+salmon-bg = #f17c71
+salmon-txt = #be4344
+
+body
+	background: white-txt
+	font-family: 'Roboto', sans-serif
+	font-weight: 400
+
+h1
+	font-family: 'Sonsie One', cursive;
+	color: rgb(243,243,243)
+	text-align: center
+	font-size: 60px
+	margin-top: 0
+	margin-bottom: 20px
+
+h3
+	text-align: center
+	font-family: 'Roboto', sans-serif
+	font-weight: 400
+	font-size:40px
+	margin: 80px 0
+	color: brown-txt
+
+
+//Overwrite bootstrap
+
+.navbar
+	background: rgb(245,245,245)
+	border-radius: 0
+	box-shadow: none
+	border: none
+
+//Basic
+
+.heavy
+	font-weight: 700
+
+.show-case
+	background: yellow-txt
+	padding: 120px 0
+
+.description
+	text-align: center
+	color: rgb(223,153,0)
+	font-size: 16px
+	display: block
+	width: 280px
+	margin: 0 auto
+
+.btns-grp
+	text-align: center
+	display: block
+	margin-top: 40px
+
+
+.header-btn
+	padding: 16px 28px
+	font-weight: 400
+	background: #ee9e20
+	border: none
+	font-size: 14px
+	font-weight: 700
+	margin-right: 10px
+	color: white-txt
+
+	&:hover
+		background: rgb(79,64,62)
+		color: yellow-txt
+
+	&.last
+		margin: 0
+
+.white-bg
+	background: white-txt
+
+	.row
+		color: #4e4e4e
+
+.compatibility
+	margin-top: 80px
+	p
+		font-size: 40px
+
+.methods
+	background: navy-txt
+
+	.row,h3
+		color: white-txt
+
+.btn-method
+	background: #26ae90
+	border: none
+	color: #1c755d
+	font-weight: 700
+	text-shadow: 0 1px 1px rgba(255,255,255,0.3)
+
+	&:hover
+		background: #26ae90
+		color: #0b4b3a
+
+
+.section
+	.row
+		margin-bottom: 40px
+		font-size: 18px
+
+.main
+	background: salmon-bg
+	color: white-txt
+
+	h3
+		color: salmon-txt
+
+	.sub-header
+		color: #d74e4a
+		font-weight: 700
+		// text-shadow: 0 1px 0px rgba(190,67,68,0.5)
+
+.code
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace
+	font-size: 12px;
+	color: salmon-txt
+	background: #f5a29a
+	padding: 5px
+	border-radius: 5px
+	display: inline-block
+
+footer
+	padding: 20px
+
+	a
+		color: yellow-txt
+		font-weight: 700

@@ -1,0 +1,161 @@
+<div class="show-case">
+	<h1>Skylo</h1>
+	<p class="description">A <span class="heavy">Twitter Bootstrap</span> extension to add progress loader at the top of the page.</p>
+	<div class="btns-grp">
+		<div class="btn btn-default header-btn" id="demo">DEMO</div>
+		<div class="btn btn-default header-btn last" id="Download">DOWNLOAD</div>
+	</div>
+</div>
+
+
+
+
+<div class="white-bg section compatibility">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 col-md-offset-3">
+				<blockquote>
+				  <p>Compatible with both Twitter Bootstrap <span class="heavy">2.3.2</span> and <span class="heavy">3.0</span></p>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="methods section">
+	<div class="container">
+		<h3>Methods</h3>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+			      <div class="col-md-4">
+			      	<div id="start" class="btn btn-default btn-method">
+				        start()
+				    </div>
+			      </div>
+			      <div class="col-md-6 col-md-offset-2">
+			        Start the loader
+			      </div>
+			    </div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+			      <div class="col-md-4">
+			        <div id="end" class="btn btn-default btn-method">
+				        end()
+				    </div>
+			      </div>
+			      <div class="col-md-6 col-md-offset-2">
+			        Loader loads to 100% and fade out
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+			      <div class="col-md-4">
+			        <div id="set" class="btn btn-default btn-method">
+				        set(50)
+				    </div>
+			      </div>
+			      <div class="col-md-6 col-md-offset-2">
+			      	Set position of the loading bar.
+			      	<div class="code">[0 - 100]</div>
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+			      <div class="col-md-4">
+			        <div id="get" class="btn btn-default btn-method">
+				        get()
+				    </div>
+			      </div>
+			      <div class="col-md-6 col-md-offset-2">
+			      	Get current position of the loading bar.
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+			      <div class="col-md-4">
+			        <div id="inch" class="btn btn-default btn-method">
+				        inch(10)
+				    </div>
+			      </div>
+			      <div class="col-md-6 col-md-offset-2">
+			        Loader will inch forward according to the parameters set.
+			        <div class="code">[0 - 100]</div>
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="main section">
+	<div class="container">
+		<h3>Customization</h3>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+					<div class="col-md-4 sub-header">
+						state
+						<div class="code">["info", "success", "warning", "danger"]</div>
+					</div>
+					<div class="col-md-6 col-md-offset-2 sub-desc">
+						Using Twitter Bootstrap default state, we can switch the theme of the loader.
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+					<div class="col-md-4 sub-header">
+						inchSpeed
+						<div class="code">[milliseconds]</div>
+					</div>
+					<div class="col-md-6 col-md-offset-2 sub-desc">
+						The loader can inch forward to signify loading. Adjust the inch speed so that the inching can appear fast or slow.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+			      <div class="col-md-4 sub-header">
+			        initialBurst
+			        <div class="code">[0 - 100]</div>
+			      </div>
+			      <div class="col-md-6 col-md-offset-2 sub-desc">
+			        When we start the loader, we set a initial burst of loading so that it kicks off the impression that the loading have begin. Adjust how much initial burst that you wanted.
+			      </div>
+			    </div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+<footer class="white-bg">
+	Inspired by <a href="http://www.usabilitypost.com/2013/08/19/new-ui-pattern-website-loading-bars/#disqus_thread">UsabilityPost</a> , <a href="http://blog.ynh.io/2013/05/24/rebuild-youtubes-progress-bar.html#">ynh</a> , <a href="http://ricostacruz.com/nprogress/">NProgress</a>
+</footer>
