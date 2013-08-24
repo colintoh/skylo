@@ -69,6 +69,7 @@
     Plugin.prototype.remove = function(){
       $('.skylo').remove();
       this._shown = false;
+      this._width = 0;
     };
 
     Plugin.prototype.set = function (params) {
