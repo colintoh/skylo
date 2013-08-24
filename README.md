@@ -6,7 +6,7 @@ Skylo
 
 **Required Files**
 
-Download [skylo.js](https://github.com/colintoh/skylo/blob/master/vendor/scripts/skylo.js) and [skylo.css](https://github.com/colintoh/skylo/blob/master/vendor/styles/skylo.css). Include them below ```bootstrap.js``` and ```bootstrap.css```  respectively.
+Download [skylo.js](https://github.com/colintoh/skylo/blob/master/vendor/scripts/skylo.js) and [skylo.css](https://github.com/colintoh/skylo/blob/master/vendor/styles/skylo.css). Include them below ```bootstrap.js``` and ```bootstrap.css```  respectively. Check out the examples in the examples folder.
 
 **Demo And Documentation**
 

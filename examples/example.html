@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Skylo: The Sky Loader</title>
+    <link href='http://fonts.googleapis.com/css?family=Sonsie+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="../vendor/styles/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/styles/skylo.css">
+
+
+    <script src="../vendor/scripts/jquery-1.9.1.js"></script>
+    <script src="../vendor/scripts/bootstrap.js"></script>
+    <script src="../vendor/scripts/skylo.js"></script>
+
+
+</head>
+<body>
+    <!-- ApplicationView -->
+    <h1 style="font-family:'Sonsie One', cursive; text-align: center">Skylo</h1>
+    <div class="container" style="padding-top: 0px">
+        <div id="demo" class="btn btn-info" style="margin:0 auto;width: 200px; display:block">Full Demo</div>
+
+        <div id="start" class="btn btn-default">start</div>
+        <div id="end" class="btn btn-default">end</div>
+        <div id="set" class="btn btn-default">set(50)</div>
+        <div id="get" class="btn btn-default">get</div>
+        <div id="inch" class="btn btn-default">inch(10)</div>
+
+        <hr>
+
+        <a href="https://github.com/colintoh/skylo" class="btn btn-warning">Github</a>
+        <a href="http://skylo.s3-website-ap-southeast-1.amazonaws.com/#/home" class="btn btn-warning">Demo Site</a>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        $(function(){
+            $('#demo').on('click',function(){
+                $(document).skylo('start');
+
+                setTimeout(function(){
+                    $(document).skylo('set',50);
+                },1000);
+
+                setTimeout(function(){
+                    $(document).skylo('end');
+                },1500);
+            });
+
+            $('#start').on('click',function(){
+                $(document).skylo('start');
+            });
+
+            $('#end').on('click',function(){
+                $(document).skylo('end');
+            });
+
+            $('#set').on('click',function(){
+                $(document).skylo('show',function(){
+                    $(document).skylo('set',50);
+                });
+            });
+
+            $('#get').on('click',function(){
+                alert($(document).skylo('get')+'%');
+            });
+
+            $('#inch').on('click',function(){
+                $(document).skylo('show',function(){
+                    $(document).skylo('inch',10);
+                });
+            });
+
+
+        })
+    </script>
+
+</body>
+</html>
