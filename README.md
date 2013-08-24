@@ -63,5 +63,8 @@ Methods
 
     $(document).skylo('end');
 
+---
 
-
+Credits:
+--------
+Thanks to [2359 Media](http://2359media.com/) for providing the space and time for me to finish this plugin.
