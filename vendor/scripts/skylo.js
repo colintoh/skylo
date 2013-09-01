@@ -16,7 +16,8 @@
         defaults = {
             state: 'info', // Info, Success, Warning, Danger
           inchSpeed: 200,  // Milliseconds
-          initialBurst: 5  // Range 1 - 100.
+          initialBurst: 5,  // Range 1 - 100.
+          flat: false
         };
 
     // The actual plugin constructor
@@ -53,7 +54,7 @@
 
 
         $('<div/>',{
-            "class":"progress progress-striped active skylo",
+            "class":"progress "+((this.options.flat) ? "" : "progress-striped active") +" skylo",
         }).append(body).appendTo('body');
 
         this._shown = true;
