@@ -4,7 +4,11 @@
     left: 0;
     width: 100%;
     background: none;
-    z-index: 1000
+    z-index: 1000;
+    border-radius: 0;
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    -ms-border-radius: 0
 }
 
 .skylo .bar{
