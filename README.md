@@ -16,10 +16,12 @@ Download [skylo.js](https://github.com/colintoh/skylo/blob/master/vendor/scripts
 
 Options
 --------
+    //Default options
     $(document).skylo({
         state: 'info',
         inchSpeed: 200,
-        initialBurst: 5
+        initialBurst: 5,
+        flat: false
     });
 
 ```state ["info", "success", "warning", "danger"]``` : Customizes the theme of the progress bar. Uses the same parameters as Bootstrap uses for buttons.
@@ -27,6 +29,8 @@ Options
 ```inchSpeed (ms)```: Determine the speed of the inching motion.
 
 ```initialBurst (1 - 100)```: The initial length of the loader that you want to load.
+
+```flat (true/false)```: If ```flat``` is set to true, the animated striped UI of the progress bar will be removed.
 
 ---
 
