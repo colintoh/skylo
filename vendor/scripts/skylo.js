@@ -36,6 +36,7 @@
         this._width = 0;
         this._shown = false;
         this._name = pluginName;
+        this._end = false;
 
         this.init();
 
@@ -71,26 +72,27 @@
       $('.skylo').remove();
       this._shown = false;
       this._width = 0;
+      this._end = false;
     };
 
     Plugin.prototype.set = function (params) {
-        // Place initialization logic here
-        // You already have access to the DOM element and
-        // the options via the instance, e.g. this.element
-        // and this.options
-       clearTimeout(this.interval);
        this._width = params;
        $('.progress.skylo .bar').width(this.get()+'%');
     };
 
-    Plugin.prototype.inch = function(params){
+    Plugin.prototype.inch = function(percent, steps, inchSpeed){
       var that = this;
-      if(params > 0 && that.get() <= 100){
+      inchSpeed || inchSpeed == that.options.inchSpeed;
+
+      var stepWidth = percent / steps;
+      if(percent > 0 && that.get() <= 100){
         this.interval = setTimeout(function(){
-          var width = that.get() + 1;
-          that.set(width);
-          that.inch(--params);
-        },that.options.inchSpeed);
+          if (!that._end) {
+            var width = that.get() + stepWidth;
+            that.set(width);
+            that.inch(percent - stepWidth, --steps, inchSpeed);
+          }
+        }, inchSpeed);
       }
     };
 
@@ -103,6 +105,7 @@
 
     Plugin.prototype.end = function () {
       var that = this;
+      this._end = true;
       $('.progress.skylo .bar').width('100%');
       _disappear(400,function(){
         that.remove();
