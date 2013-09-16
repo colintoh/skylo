@@ -23,7 +23,7 @@
       position:absolute;
       top:0;
       right:0;
-      .box-shadow(@progress-bar-info-bg 1px 0 10px 1px);
+      .box-shadow(@progress-bar-bg 1px 0 10px 1px);
       border-radius: 50%;
       .opacity(0.6);
     }
@@ -39,5 +39,9 @@
 
   .bar-danger span{
     .box-shadow(@progress-bar-danger-bg 1px 0 10px 1px);
+  }
+
+  .bar-info span{
+    .box-shadow(@progress-bar-info-bg 1px 0 10px 1px);
   }
 }

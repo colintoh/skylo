@@ -130,8 +130,8 @@
         $.error(prefix + 'Initial Burst must range from 0 to 100');
       }
 
-      if(options.state !== 'info' && options.state !== 'success' && options.state !== 'danger' && options.state !== 'warning'){
-        $.error(prefix + 'Invalid state. Please choose one of these states: ["info","success","danger","warning"]');
+      if(options.state !== 'info' && options.state !== 'primary' && options.state !== 'success' && options.state !== 'danger' && options.state !== 'warning'){
+        $.error(prefix + 'Invalid state. Please choose one of these states: ["info","primary","success","danger","warning"]');
       }
 
     }
