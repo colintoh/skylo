@@ -1,6 +1,7 @@
 {
   "name":"skylo",
   "main":[
-    "vender/skylo.js"
+    "vender/styles/skylo.css",
+    "vender/scripts/skylo.js"
   ]
 }
