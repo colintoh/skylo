@@ -1,0 +1,6 @@
+{
+  "name":"skylo",
+  "main":[
+    "vender/skylo.js"
+  ]
+}
