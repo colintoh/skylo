@@ -2,7 +2,7 @@
   "name":"skylo",
   "version":"1.0.1",
   "main":[
-    "vender/styles/skylo.css",
-    "vender/scripts/skylo.js"
+    "vendor/styles/skylo.css",
+    "vendor/scripts/skylo.js"
   ]
 }
