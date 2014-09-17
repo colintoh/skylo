@@ -21,8 +21,7 @@
         };
 
     // The actual plugin constructor
-    function Plugin( element, options ) {
-        this.element = element;
+    function Plugin(options ) {
 
         // jQuery has an extend method that merges the
         // contents of two or more objects, storing the
@@ -142,33 +141,28 @@
 
     // A really lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations
-    $.fn[pluginName] = function ( options ) {
+    $.skylo = function ( options ) {
       var _arguments = arguments;
       var retVal = null;
 
-        this.each(function () {
-            if (!$.data(this, 'plugin_' + pluginName)) {
-                $.data(this, 'plugin_' + pluginName,
-                new Plugin( this, options ));
-            }
-            var data = $.data(this, 'plugin_' + pluginName);
-            if(data[options]){
-              retVal = data[options].apply(data,Array.prototype.slice.call(_arguments,1));
+      if (!$.data(document, 'plugin_' + pluginName)) {
+          $.data(document, 'plugin_' + pluginName,
+          new Plugin( options ));
+      }
 
-            } else if(typeof options === 'object' || !options){
-              data.options = $.extend({},data.options,options);
-              _validate(data.options);
-            } else {
-              $.error('Skylo have no such methods');
-            }
-        });
+      var data = $.data(document, 'plugin_'+pluginName);
 
+      if(data[options]){
+        retVal = data[options].apply(data,Array.prototype.slice.call(_arguments,1));
+      } else if(typeof options === 'object' || !options){
+        data.options = $.extend({},data.options,options);
+        _validate(data.options);
+      } else {
+        $.error('Skylo have no such methods');
+      }
 
-        if(typeof retVal === undefined){
-          retVal = this;
-        }
+      return retVal;
 
-        return retVal;
     }
 
 })( jQuery, window, document );
