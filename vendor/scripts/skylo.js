@@ -91,6 +91,8 @@
           that.set(width);
           that.inch(--params);
         },that.options.inchSpeed);
+      } else if(that.get() === 100){
+        that.end();
       }
     };
 
@@ -103,6 +105,7 @@
 
     Plugin.prototype.end = function () {
       var that = this;
+      clearTimeout(this.interval);
       $('.progress.skylo .bar').width('100%');
       _disappear(400,function(){
         that.remove();
