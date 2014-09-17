@@ -17,7 +17,7 @@ Download [skylo.js](https://github.com/colintoh/skylo/blob/master/vendor/scripts
 Options
 --------
     //Default options
-    $(document).skylo({
+    $.skylo({
         state: 'info',
         inchSpeed: 200,
         initialBurst: 5,
@@ -38,34 +38,34 @@ Methods
 -------
 ```start```: This will initiate the loader with a initial burst of length.
 
-    $(document).skylo('start');
+    $.skylo('start');
 
 ```end```: The loader will reach 100% and then fade out.
 
-    $(document).skylo('end');
+    $.skylo('end');
 
 ```set(width)```: The loader's width will be animated to the percentage stated. Ranges from 1 - 100.
 
-    $(document).skylo('set',50); //Set width to 50%
+    $.skylo('set',50); //Set width to 50%
 
 ```get```: Returns the current loader's width percentage.
 
-    $(document).skylo('get');
+    $.skylo('get');
 
 ```inch```: Loader will inch forward according to the parameters set.
 
-    $(document).skylo('inch',10); //Inch forward by 10%
+    $.skylo('inch',10); //Inch forward by 10%
 
 ```show(callback)```: Loader will be inserted into the DOM and a callback function will be called.
 
-     $(document).skylo('show',function(){
+     $.skylo('show',function(){
         //After inserting Loader, animates width to 30%
-        $(document).skylo('set',30);
+        $.skylo('set',30);
      });
 
 ```remove```: Remove Loader from the DOM. Normally unused. Just use ```end`` method to complete the animation.
 
-    $(document).skylo('end');
+    $.skylo('end');
 
 ---
 

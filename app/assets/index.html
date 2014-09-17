@@ -25,39 +25,39 @@
 
         $(function(){
             $('#demo').on('click',function(){
-                $(document).skylo('start');
+                $.skylo('start');
 
                 setTimeout(function(){
-                    $(document).skylo('set',50);
+                    $.skylo('set',50);
                 },1000);
 
                 setTimeout(function(){
-                    $(document).skylo('end');
+                    $.skylo('end');
                 },1500);
             });
 
 
             $('#start').on('click',function(){
-                $(document).skylo('start');
+                $.skylo('start');
             });
 
             $('#end').on('click',function(){
-                $(document).skylo('end');
+                $.skylo('end');
             });
 
             $('#set').on('click',function(){
-                $(document).skylo('show',function(){
-                    $(document).skylo('set',50);
+                $.skylo('show',function(){
+                    $.skylo('set',50);
                 });
             });
 
             $('#get').on('click',function(){
-                alert($(document).skylo('get')+'%');
+                alert($.skylo('get')+'%');
             });
 
             $('#inch').on('click',function(){
-                $(document).skylo('show',function(){
-                    $(document).skylo('inch',10);
+                $.skylo('show',function(){
+                    $.skylo('inch',10);
                 });
             });
 
