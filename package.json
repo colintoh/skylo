@@ -2,7 +2,7 @@
   "author": "Colin Toh",
   "name": "skylo",
   "description": "A Twitter Bootstrap extension to add progress loader at the top of the page.",
-  "version": "1.0",
+  "version": "0.4.0",
   "homepage": "http://skylo.s3-website-ap-southeast-1.amazonaws.com/#/home",
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
     "javascript-brunch": ">= 1.0 < 1.5",
     "stylus-brunch": "1.5.1",
     "css-brunch": ">= 1.0 < 1.5",
-    "ember-handlebars-brunch": "git+ssh://git@github.com:bartsqueezy/ember-handlebars-brunch.git",
+    "ember-precompiler-brunch": "1.5.1",
     "uglify-js-brunch": ">= 1.0 < 1.5",
     "clean-css-brunch": ">= 1.0 < 1.5",
     "jshint-brunch": "1.6.0",
