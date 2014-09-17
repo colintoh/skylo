@@ -1,12 +1,12 @@
 {
   "author": "Colin Toh",
-  "name": "Ember-Brunch",
-  "description": "Start building production-ready Ember app today with Ember-Brunch.",
-  "version": "0.1.0",
-  "homepage": "https://github.com/colintoh/ember-brunch",
+  "name": "skylo",
+  "description": "A Twitter Bootstrap extension to add progress loader at the top of the page.",
+  "version": "1.0",
+  "homepage": "http://skylo.s3-website-ap-southeast-1.amazonaws.com/#/home",
   "repository": {
     "type": "git",
-    "url": "https://github.com/colintoh/ember-brunch"
+    "url": "skylo"
   },
   "engines": {
     "node": "~0.6.10 || 0.8 || 0.9"
