@@ -1,0 +1,8 @@
+{
+  "name":"skylo",
+  "version":"1.0.1",
+  "main":[
+    "vendor/styles/skylo.css",
+    "vendor/scripts/skylo.js"
+  ]
+}
