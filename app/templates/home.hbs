@@ -151,14 +151,36 @@ PaulvdDool
 <div class="main section">
 	<div class="container">
 		<h3>Customization</h3>
+
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<div class="row">
-					<div class="col-md-4 sub-header">
-						state
-						<div class="code">["info", "success", "warning", "danger"]</div>
+					<div class="col-md-12 sub-header">
+						Initialize (Optional)
+						<div class="code col-md-12 full-code">
+								//Default Values <br>
+								<br>
+								$(document).skylo({ <br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'state': 'info', <br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'inchSpeed': 200, <br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'initialBurst': 5, <br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'flat': false <br>
+								});
+						</div>
 					</div>
-					<div class="col-md-6 col-md-offset-2 sub-desc">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="row">
+					<div class="col-md-5 sub-header">
+						state
+						<div class="code">[ "info", "success", "warning", "danger" ]</div>
+					</div>
+					<div class="col-md-6 col-md-offset-1 sub-desc">
 						Using Twitter Bootstrap default state, we can switch the theme of the loader.
 					</div>
 				</div>
