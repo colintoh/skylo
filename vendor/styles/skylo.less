@@ -1,0 +1,47 @@
+
+@skylo-bar-height: 5px;
+
+.skylo {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+  z-index: @zindex-modal;
+  border-radius: 0;
+
+  .bar{
+    width:0%;
+    height: @skylo-bar-height;
+    margin:0;
+    position:relative;
+
+    span{
+      width:50px;
+      height: 100%;
+      display:block;
+      position:absolute;
+      top:0;
+      right:0;
+      .box-shadow(@progress-bar-bg 1px 0 10px 1px);
+      border-radius: 50%;
+      .opacity(0.6);
+    }
+  }
+
+  .bar-success span{
+    .box-shadow(@progress-bar-success-bg 1px 0 10px 1px);
+  }
+
+  .bar-warning span{
+    .box-shadow(@progress-bar-warning-bg 1px 0 10px 1px);
+  }
+
+  .bar-danger span{
+    .box-shadow(@progress-bar-danger-bg 1px 0 10px 1px);
+  }
+
+  .bar-info span{
+    .box-shadow(@progress-bar-info-bg 1px 0 10px 1px);
+  }
+}
