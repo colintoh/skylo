@@ -10,5 +10,4 @@ App.IndexRoute = Em.Route.extend({
 App.Router.map(function(){
     this.route('index',{path:'/'});
     this.route('home');
-    this.route('nextpage');
 });
